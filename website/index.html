@@ -4,113 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Admin Dashboard</title>
 
-    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <div class="logo">
-            <h2>My Website</h2>
-        </div>
-
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-
-    <!-- Main Header / Hero Section -->
-    <header id="home">
-        <h1>Welcome to My Website</h1>
-        <p>This is a basic HTML website template.</p>
-
-        <button>Learn More</button>
+    <!-- Website Header -->
+    <header>
+        <h1>SES ROTG Web Portal</h1>
     </header>
 
 
     <!-- Main Content -->
     <main>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>
-                This section contains information about the website,
-                company, or project.
-            </p>
-        </section>
+        <!-- Admin Options Section -->
+        <section id="admin">
 
+            <a href="users.php">
+                <button>Manage Users</button>
+            </a>
 
-        <!-- Services Section -->
-        <section id="services">
-            <h2>Services</h2>
-
-            <div class="cards">
-
-                <article>
-                    <h3>Service 1</h3>
-                    <p>Description of service one.</p>
-                </article>
-
-                <article>
-                    <h3>Service 2</h3>
-                    <p>Description of service two.</p>
-                </article>
-
-                <article>
-                    <h3>Service 3</h3>
-                    <p>Description of service three.</p>
-                </article>
-
-            </div>
+            <a href="resources.php">
+                <button>Manage Resources</button>
+            </a>
 
         </section>
-
-
-        <!-- Contact Section -->
-        <section id="contact">
-
-            <h2>Contact</h2>
-
-            <form>
-
-                <label>Name:</label>
-                <input type="text" name="name">
-
-                <label>Email:</label>
-                <input type="email" name="email">
-
-                <label>Message:</label>
-                <textarea name="message"></textarea>
-
-                <button type="submit">
-                    Send
-                </button>
-
-            </form>
-
-        </section>
-
 
     </main>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            © 2026 My Website. All rights reserved.
-        </p>
-
-    </footer>
 
 
 </body>
