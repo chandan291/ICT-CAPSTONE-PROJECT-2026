@@ -1,5 +1,4 @@
 <?php
-
 $host = "db.harqxvgoeokhlepiaonz.supabase.co";
 $port = "5432";
 $dbname = "postgres";
@@ -9,13 +8,14 @@ $password = "KIT300SESProject";
 
 try {
 
-    $conn = new PDO(
-        "pgsql:host=$host;port=$port;dbname=$dbname",
+    $pdo = new PDO(
+        "pgsql:host=$host;port=$port;dbname=$dbname;sslmode=require",
         $user,
         $password
     );
 
-    $conn->setAttribute(
+
+    $pdo->setAttribute(
         PDO::ATTR_ERRMODE,
         PDO::ERRMODE_EXCEPTION
     );
@@ -24,9 +24,9 @@ try {
     echo "Database Connected";
 
 
-} catch(PDOException $e){
+} catch (PDOException $e) {
 
-    echo "Connection failed: " . $e->getMessage();
+    die("Database connection failed: " . $e->getMessage());
 
 }
 

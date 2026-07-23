@@ -81,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </header>
 
 
-
+<?php include "navbar.php"; ?>
 <main>
 
 

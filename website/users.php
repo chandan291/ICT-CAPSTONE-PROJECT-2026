@@ -6,7 +6,7 @@ require "dbconn.php";
 // Get users from database
 $sql = 'SELECT * FROM "User"';
 
-$stmt = $conn->prepare($sql);
+$stmt = $pdo->prepare($sql);
 
 $stmt->execute();
 
@@ -33,13 +33,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <body>
 
 
-<header>
-
-    <h1>SES ROTG Web Portal</h1>
-    <h2>User Management</h2>
-
-</header>
-
+<?php include "navbar.php"; ?>
 
 
 <main>
